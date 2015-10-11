@@ -1,17 +1,17 @@
+# when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
 menu:
-  #home: /
-  about: /about
+  home: /
   categories: /categories
+  about: /about
   archives: /archives
   tags: /tags
-  commonweal: /404.html
+  #commonweal: /404.html
 
 # Place your favicon.ico to /source directory.
-favicon: /favicon.ico
-
+favicon: http://7xn2pe.com1.z0.glb.clouddn.com/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "shadowsocks,git,github,git工作流,大数据,jstorm,fastdfs,xirong,ixirong,分布式"
+keywords: "Hexo,next"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -21,17 +21,15 @@ rss:
 # Icon fonts
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
-# linecons:https://github.com/fontello/linecons.font
-icon_font: linecons
+icon_font: default
 #icon_font: fifty-shades
 #icon_font: feather
-#icon_font: default
+#icon_font: linecons
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal  
-
+highlight_theme: normal
 
 # MathJax Support
 mathjax:
@@ -41,13 +39,39 @@ mathjax:
 scheme: Mist
 
 
+# Sidebar, available value:
+#  - post    expand on posts automatically. Default.
+#  - always  expand for all pages automatically
+#  - hide    expand only when click on the sidebar toggle icon.
+sidebar: post
+#sidebar: always
+#sidebar: hide
+
+
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 
 
 # Automatically add list number to toc.
-toc_list_number: false
+toc_list_number: true
 
+# Automatically Excerpt
+auto_excerpt:
+  enable: false
+  length: 150
+
+# Use Lato font
+# Note: this option is avialable only when the language is not `zh-Hans`
+use_font_lato: true
+
+# Make duoshuo show UA
+# user_id must NOT be null when admin_enable is true!
+# you can visit http://dev.duoshuo.com get duoshuo user id.
+duoshuo_info:
+  ua_enable: true
+  admin_enable: false
+  user_id: UnixAgain
+  #admin_nickname: ROOT
 
 ## DO NOT EDIT THE FOLLOWING SETTINGS
 ## UNLESS YOU KNOW WHAT YOU ARE DOING
@@ -61,18 +85,9 @@ fancybox: true
 # Static files
 vendors: vendors
 css: css
+js: js
 images: images
 
+
 # Theme version
-version: 0.4.2
-
-# xirong custom 
-avatar: /xirong.jpg
-
-# Sidebar 侧栏行为，可选值有
-#  - post   默认值，在文章页面自动展开侧栏
-#  - always 在所有页面自动展开侧栏
-#  - hide   在手动点击侧栏的开关按钮时展开
-#sidebar: post
-#sidebar: always
-sidebar: hide
+version: 0.4.5.1

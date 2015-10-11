@@ -58,6 +58,7 @@
             </a>
           </div>
         {% endif %}
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=350 src="http://music.163.com/outchain/player?type=0&id=28529870&auto=1&height=430"></iframe>
 
         {% if theme.social %}
           <div class="links-of-author motion-element">
